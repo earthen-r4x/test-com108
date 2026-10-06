@@ -24,18 +24,22 @@ int main() {
 // --- SINH VIÊN VIẾT CODE CÁC HÀM DƯỚI ĐÂY ---
 float nhapSanLuongWh() {
   // TODO: Viết code nhập sản lượng sử dụng vòng lặp do...while (yêu cầu > 0)
-
-  return 0.0;
+  float wh_data;
+  do {
+    printf("Nhap san luong wh: ");
+    scanf("%lf", &wh_data);
+  } while (wh_data > 0);
+  return wh_data;
 }
 
 float doiWhSangKwh(float wh) {
   // TODO: Viết code quy đổi (lưu ý tránh lỗi chia số nguyên)
-
-  return 0.0;
+  // 1kwh = 1000 wh
+  return (float) wh / 1000;
 }
 
 float tinhTienDien(float kwh, float donGia) {
   // TODO: Tính tiền
-
-  return 0.0;
+  // -> Điện năng tiêu thụ = số kwh * đơn giá
+  return (float) kwh * donGia;
 }
